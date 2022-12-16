@@ -1,6 +1,5 @@
 body {
     display: flex;
-    flex-direction: row;
     line-height: 1.3;
 }
 
@@ -99,29 +98,50 @@ nav ul {
   }
 
  ul h4 {
-    text-align: left;
+    text-align: center;
+    flex-wrap:wrap;
     font-size: 150%;
     margin-left: 25px;
     border-bottom: solid;
   }
 
-#project-img {
+  #project-img1 {
+    display: block;
     padding: 15px;
-    margin: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+  }
+
+.project-img {
+  display: block;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
     height: 85%;
     width: 50%;
   }
 
   #contact-links {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     padding: 25px;
+  }
+
+  #contacts-section {
+    background-color: rgb(209, 86, 86);
   }
 
   h5 {
     font-size: 150%;
     text-align: center;
+  }
+
+  .flex-li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 50%;
   }
 
   @media screen and (max-width: 768px) {
